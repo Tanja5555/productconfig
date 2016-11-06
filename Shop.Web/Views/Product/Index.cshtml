@@ -1,0 +1,36 @@
+﻿@model Shop.Web.Models.ProductIndexViewModel
+
+ 
+
+@{
+    ViewBag.Title = "Index";
+   
+}
+
+    @foreach (var item in Model.Products)
+    {
+
+        <div class="col-md-6 ">
+            <div class="productFrame">
+
+                <img class="imageFrame" src="@item.ProductImage" /><br />  
+                @Html.DisplayFor(x => item.ProductName) <br />              
+                <div class="btn btn-default customButton">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        @Html.ActionLink("Design now!", "SeePreorder", "Order", new { id = item.Id }, null)
+                    }
+                    else
+                    {
+                        @Html.ActionLink("Design now!", "Login", "Account")
+                    }
+                </div>
+            </div>
+            
+        </div>
+                            
+    }
+
+
+
+

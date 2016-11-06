@@ -1,0 +1,10 @@
+﻿@using TanLeonaShop.Domain.Models;
+@model  Order
+
+            <div>
+                @if (Model.Delivered == true)
+                {<p class="true-Message">Your product is delivered</p>}
+                else
+                {<p class="false-Message">Your product will be delivered soon.</p>}
+            </div>
+

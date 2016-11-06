@@ -1,0 +1,19 @@
+﻿@model Shop.Web.Models.OrderViewModel
+
+
+<p class="thankYou">@TempData["Tack"]</p>
+
+<div class="frame">
+    <div class="row">
+        <div class="col-md-12 productOptions">
+
+            Product: @Html.DisplayFor(model => model.Product.ProductName) <br />
+            Order Code: @Html.DisplayFor(model => model.Order.OrderCode) <br />
+            Total Price: @Html.DisplayFor(model => model.Order.TotalPrice) <span>Kr</span><br />
+            Order Date: @Html.DisplayFor(model => model.Order.OrderDate)<br />
+            Delivery Date: @Html.DisplayFor(model => model.Order.DeliveryDate)
+        </div>
+    </div>
+
+</div>
+<br />

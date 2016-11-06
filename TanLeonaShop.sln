@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TanLeonaShop.Web", "Shop.Web\TanLeonaShop.Web.csproj", "{3E358B24-B16B-46BF-84C8-00F0E4247B78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TanLeonaShop.Domain", "TanLeonaShop.Domain\TanLeonaShop.Domain.csproj", "{71B117F1-C429-45DB-BB60-3E8B736B7157}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TanLeonaShop.Tests", "TanLeonaShop.Tests\TanLeonaShop.Tests.csproj", "{D9DACA8F-16E2-44B4-921E-4334A36708F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E358B24-B16B-46BF-84C8-00F0E4247B78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E358B24-B16B-46BF-84C8-00F0E4247B78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E358B24-B16B-46BF-84C8-00F0E4247B78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E358B24-B16B-46BF-84C8-00F0E4247B78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71B117F1-C429-45DB-BB60-3E8B736B7157}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71B117F1-C429-45DB-BB60-3E8B736B7157}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71B117F1-C429-45DB-BB60-3E8B736B7157}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71B117F1-C429-45DB-BB60-3E8B736B7157}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9DACA8F-16E2-44B4-921E-4334A36708F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9DACA8F-16E2-44B4-921E-4334A36708F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9DACA8F-16E2-44B4-921E-4334A36708F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9DACA8F-16E2-44B4-921E-4334A36708F4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

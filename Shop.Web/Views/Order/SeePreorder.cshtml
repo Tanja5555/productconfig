@@ -1,0 +1,46 @@
+﻿@model Shop.Web.Models.OrderViewModel
+
+
+@using (Html.BeginForm("SeePreorder", "Order", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <div class="frame">
+        <div class="row">
+            <div class="col-md-12 productName">
+                @Html.DisplayFor(model => model.Product.ProductName) - 
+                @Html.DisplayFor(model => model.Product.ProductPrice) Kr
+                @Html.HiddenFor(model => model.Product.Id)
+            </div>
+        </div>
+
+        <div class="row">
+
+            @foreach (var option in Model.Product.Options)
+            {
+                <div class="row">
+                    <div class="col-md-12 productOptions">
+                        <div class="col-md-4">
+                            @Html.Label(option.OptionName)
+                        </div>
+                       
+                        <div class="col-md-8">
+                            @foreach (var choice in option.OptionChoices)
+                            {
+                                @Html.RadioButtonFor(m => option.SelectedOptionChoice, choice.Id, new { @Name = option.OptionName, @checked = "checked"})<span> </span>
+                                @Html.Label(choice.OptionChoiceName) <span> - </span> 
+                               
+                                @Html.Label(choice.OptionChoicePrice.ToString()) <span> Kr</span> <br />
+                            }
+                            @Html.ValidationMessageFor(m => option.OptionChoices, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+                <br />
+            }
+        </div>
+        <button type="submit" class="btn btn-default">Send order</button>
+    </div>
+    <br />
+    @Html.ActionLink("Back to Products", "Index", "Product")
+
+}
